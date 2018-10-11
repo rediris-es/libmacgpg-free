@@ -28,3 +28,16 @@ make
 sudo cp ./build/Release/org.gpgtools.Libmacgpg.xpc/Contents/MacOS/org.gpgtools.Libmacgpg /Library/Application\ Support/GPGTools/org.gpgtools.Libmacgpg.xpc/Contents/MacOS
 sudo chmod 755 /Library/Application\ Support/GPGTools/org.gpgtools.Libmacgpg.xpc/Contents/MacOS/org.gpgtools.Libmacgpg
 ```
+
+#### Restarting the XPC service
+ * After copying the file to the path:
+
+````bash
+launchctl stop org.gpgtools.Libmacgpg.xpc
+launchctl start org.gpgtools.Libmacgpg.xpc
+````
+
+
+#### Note:
+* Still trying to contact the developers for a non-profit , group discount 
+
